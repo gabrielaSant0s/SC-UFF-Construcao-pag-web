@@ -1,5 +1,5 @@
 ## Objetivo
-Repo criado com o intuito de guardar as atividades da matéria contruação de páginas web do curso de Sisemas de Computação da Universidade Federal Fluminense. A matéria visa o aprendizado de páginas web utilizando html, css e javascript.
+Repo criado com o intuito de guardar as atividades da matéria construção de páginas web do curso de Sisemas de Computação da Universidade Federal Fluminense. A matéria visa o aprendizado de páginas web utilizando html, css e javascript.
 
 ### Imagens referentes a AD1
 
