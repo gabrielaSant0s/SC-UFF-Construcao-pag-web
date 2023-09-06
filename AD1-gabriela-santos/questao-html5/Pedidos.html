@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla|Verdana|Ubuntu">
+    <title>A Espuma era Lei - Pedidos</title>
+</head>
+<body>
+    <header>
+        <div class="imgLogo">
+            <img src="../Imagens/EspumaEraLeiTopo.png">
+        </div>
+        <div class="ender">
+            <address>Via Expressa, 126</address>
+            <address>Tel: (21)91122-3344</address>
+            <address><a id="email" href="contato@espumaeralei.com.br">contato@espumaeralei.com.br</a></address>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="EspumaEraLei.html" target="_blank">Apresentação</a></li>
+            <li><a href="Cafeteiras.html" target="_blank">Cafeteiras</a></li>
+            <li><a href="Capsulas.html" target="_blank">Cápsulas</a></li>
+            <li><a href="Pedidos.html" target="_blank">Pedidos</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="FormBox">
+            <form method="GET" id="formPedido" action="Pagamento.html">
+                <fieldset class="FSLinhaInteira">
+                    <legend>Seleção de Produtos e Lista de Compras</legend>
+
+                    <fieldset class="FSEsq">
+
+                        <div class="ColEsq">
+
+                            <div class="ColEsqSelProd">
+                                <label for="selMaquina">Máquinas:</label>
+                                <select id="selMaquina" name="selMaquina" form="formPedido" class="InpBoxMed">
+                                    <option>-----</option>
+                                    <optgroup label="Dolce Gusto">
+                                        <option value="480">Mine ME</option>
+                                        <option value="530">Genio S Plus</option>
+                                    <optgroup label="Nespresso"> 
+                                        <option value="500">Inissia</option>
+                                    <optgroup label="Três Corações">
+                                        <option value="400">LOV</option>
+                                </select>
+                            </div>
+
+                            
+                            <div class="ColEsqSelProd">
+                                <label for="selCapsula">Cápsulas:</label>
+                                <select id="selCapsula" name="selCapsula" form="formPedido" class="InpBoxMed">
+                                    <option>-----</option>
+                                    <optgroup label="Tipo Dolce Gusto">
+                                        <option value="18">Dolce Gusto Expresso</option>
+                                        <option value="19">Dolce Gusto Intenso</option>
+                                    <optgroup label="Tipo Três Corações">
+                                        <option value="44">Força / Vibrante</option>
+                                    <optgroup label="Tipo Nespresso">
+                                        <option value="20">Três Corações Intenso</option>
+                                        <option value="21">Lor Forza</option>
+                                </select>
+                            </div>
+                            
+                            <div class="ColEsqValUnit">
+                                <label for="idValUnitario">Valor Unitário R$:</label>
+                                <input type="number" id="idValUnitario" class="numDD"/>
+                            </div>
+                            
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="FSDir">
+
+                        <div class="ColDir">
+                            <div class="itensColunaDir">
+                                <div class="ColDirSelProd">
+                                    <label for="idQtdMaquina">Qtd:</label>
+                                    <input type="number" id="idQtdMaquina" class="numDD"/>
+                                </div>
+                                
+                                <div class="ColDirSelProd">
+                                    <label for="idQtdCapsula">Qtd:</label>
+                                    <input type="number" id="idQtdCapsula" class="numDD"/>
+                                </div>
+                               
+                                <div class="ColDirSelProd">
+                                    <input type="button" value="Incluir Produtos" class="botoes"/>
+
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </fieldset>
+
+                    <div class="LabBoxSel">
+                        <textarea class="boxPedidos"></textarea>
+                    </div>
+
+                    <div class="LinhaForm">
+                        <label for="idValTotal">Valor Total R$:</label>
+                        <input type="number" id="idValTotal" class="numDD"/>
+                    </div>
+                    
+                </fieldset>  
+
+                <div class="botoes">
+                        <input type="submit" value="Continuar" class="botoes"/>
+                        <input type="reset" value="Limpar" class="botoes"/>
+                </div>
+            </form>
+        </div>
+    </section>  
+</body>
+</html>

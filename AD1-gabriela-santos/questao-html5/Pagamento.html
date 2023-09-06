@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla|Verdana|Ubuntu">
+    <title>A Espuma era Lei - Pagamento</title>
+</head>
+<body>
+    <header>
+        <div class="imgLogo">
+            <img src="../Imagens/EspumaEraLeiTopo.png">
+        </div>
+        <div class="ender">
+            <address>Via Expressa, 126</address>
+            <address>Tel: (21)91122-3344</address>
+            <address><a id="email" href="contato@espumaeralei.com.br">contato@espumaeralei.com.br</a></address>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="EspumaEraLei.html" target="_blank">Apresentação</a></li>
+            <li><a href="Cafeteiras.html" target="_blank">Cafeteiras</a></li>
+            <li><a href="Capsulas.html" target="_blank">Cápsulas</a></li>
+            <li><a href="Pedidos.html" target="_blank">Pedidos</a></li>
+        </ul>
+    </nav>
+    <section>
+       <div class="FormBox" id="FormPagamento">
+        <form method="GET" id="formPedido" action="EspumaEraLei.html">
+                <fieldset class="FieldIdentificação">
+                    <legend>Identificação</legend>
+
+                    <div class="divLinha">
+                        <div>
+                            <label for="idNome">Nome:</label>
+                            <input type="text" class="InpBoxGnd" id="idNome"/>
+                        </div>
+    
+                        <div>
+                            <label for="idEmail">E-mail:</label>
+                            <input type="text" class="InpBoxGnd" id="idEmail"/>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="colPri">
+                            <div class="divEndereco">
+                                <label for="endereco">Endereço:</label>
+                                <textarea id="endereco"></textarea>
+                            </div>
+    
+                            <div class="divTel">
+                                <label for="idTel">Telefone:</label>
+                                <input type="tel" class="inpTelef" id="idTel"/>
+                            </div>
+    
+                            <div class="divTel">
+                                <label for="idCel">Celular:</label>
+                                <input type="tel" class="inpTelef" id="idCel"/>
+                            </div>
+    
+                        </div>
+    
+                        <div>                
+                            <fieldset>
+                                <legend>Genero:</legend>
+
+                                <span>
+                                    <input type="radio" for="masc" value="masc" name="genero"/>
+                                    <label id="mas">Mas</label>  
+                                </span>
+                                
+                                <span>
+                                    <input type="radio" for="fem" value="fem" name="genero"/>
+                                    <label id="fem">Fem</label>
+                                </span>
+
+                                <span>
+                                    <input type="radio" for="outro" value="outro" name="genero"/>
+                                    <label id="outro">Outro</label>
+                                </span>
+
+                            </fieldset>
+                        
+                            <fieldset>
+                                <legend>Nascimento:</legend>
+                                <span>
+                                    <input type="number" class="numberNass"/> /
+                                    <input type="number" class="numberNass"/> /
+                                    <input type="number" class="numQD" />
+                                </span>
+
+                            </fieldset>
+    
+                        </div>
+
+                    </div>
+                    
+                   
+                </fieldset>
+    
+                <fieldset class="FieldPag">
+                    <legend>Pagamento</legend>
+
+                    <div class="ColunaEsqPag">
+                        <fieldset class="colLabCrd">
+                            <legend>Cartão</legend>
+
+                            <div class="divCartao">
+                                <label>Bandeira: </label>
+                                <span>
+                                    <input type="radio" name="bandeira" value="visa" id="visa"/>
+                                    <label for="visa">Visa</label>  
+                                </span>
+                                
+                                <span>
+                                    <input type="radio" name="bandeira" value="master" id="master"/>
+                                    <label for="master">Master</label>
+                                </span>
+
+                                <span>
+                                    <input type="radio" name="bandeira" value="elo" id="elo"/>
+                                    <label for="elo">Elo</label>
+                                </span>
+                            </div>
+
+                            <div class="divCartao">
+                                <label>Validade:</label>
+                                <span>
+                                    <input type="number" class="numberNass"/> /
+                                    <input type="number" class="numQD"/> 
+                                </span>   
+                            </div>
+
+                            <div class="divCartao">
+                                <label for="numCartao">Número:</label>
+                                <input type="text" class="npNCC" id="numCartao">
+                            </div>
+                        </fieldset>
+
+                        <span class="colValTot">
+                            <label>Valor Total R$</label>
+                            <input type="number" id="valTotal"/>
+                        </span>
+                    </div>
+
+                    <div class="listaCompras">
+                        <textarea class="inpEnder"></textarea>
+                    </div>
+                    
+                </fieldset>
+    
+                <div class="botoesPag">
+                    <input type="reset" value="Limpar" id="limpar"/>
+                    <input type="submit" value="Enviar" id="enviar"/>  
+                </div>
+
+        </form>
+            
+       </div>
+    </section>  
+</body>
+</html>

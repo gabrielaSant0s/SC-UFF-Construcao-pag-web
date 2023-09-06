@@ -1,0 +1,448 @@
+/* ===================== Principal =========================== */
+
+body {
+    background-color: #EEBB88;
+    color: #402020;
+    font-size: 16px;
+    font-family: Stoke, 'Lucida Bright', Liberation, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #603030;
+}
+
+a:visited {
+    color: #603030;
+}
+
+header { 
+    display:block; 
+    margin-bottom: 1px; 
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.imgLogo {
+    width: 40%;
+    margin-top: 3%;
+    border-bottom: solid #402020 3px;
+    padding-bottom: 15px;
+    margin-bottom: 6px;
+}
+
+.imgLogo img {
+    width: 100%;
+}
+
+.ender {
+    width: 40%;
+    margin-left: 60%;
+    margin-top: -10%;
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    font-family: "Karla", "Verdana", "Ubuntu", sans-serif;
+    line-height: 140%;
+    font-size: 14px;
+}
+
+nav {
+    width: 20%;
+    float: left;
+    display: block;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+nav ul {
+    color:  #332277;
+    line-height: 230%;
+    margin-top: 40px;
+    list-style-type: circle;
+    font-family: "Karla", "Verdana", "Ubuntu", sans-serif;
+}
+
+/* ======================== section questao 2 ===============================*/
+
+section {
+    display: block;
+    width: 70%;
+    float: right;
+}
+
+.apres {
+    font-family: "Stoke", "Lucida Bright", "Liberation", sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -13em;
+    margin-right: 15%;
+}
+
+.apres img {
+    width: 40%;
+} 
+
+/* ========================== section quetão 3 ======================== */
+
+.listaMaq{
+    color: #402020;
+    background-color: #EEDDCC;
+    padding: 10px 10px 10px 50px;
+    width: 340px;
+    border: solid #402020 2px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.listaMaq ol {
+    list-style-type:upper-roman;
+}
+
+.cafList{
+    color:#402020;
+    list-style-type: square;
+}
+
+.cafList li{
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.preco{
+    color:  #CC0000;
+}
+
+.cafeteirasSec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 8%;
+    margin-top: -14em;
+}
+
+/* ==================== section questão 4 ==========================*/
+
+.tabCap {
+    border: solid;
+    border-collapse: collapse;
+    background-color: #EEDDCC;
+    margin-top: 6px;
+    font-size: 15px;
+    color:  #402020 ;
+    font-family: "Karla", "Verdana", "Ubuntu", sans-serif;
+    margin-top: -14em;
+    float: right;
+    margin-right: 30%;
+}
+
+.tabCap th {
+    border: solid 3px #888888;
+    padding: 6px 12px 6px 12px;
+}
+
+.tabCap td {
+    border: solid 3px #000066;
+    padding: 6px 12px 6px 12px;
+}
+
+.linTH {
+    color: #FFFFFF;
+    background-color: #402020;
+    vertical-align: middle;
+}
+
+.colTH {
+    color: #FFFFFF;
+    background-color: #804040;
+    text-align: left;
+}
+
+.preco {
+    color: #CC0000 ;
+}
+
+.imgCel {
+    background-color: #FFFFFF;
+}
+
+.imgCel img {
+    width: 60px;
+    height: 60px;
+}
+
+/* ==================== section questão 5 ==========================*/
+
+.FormBox {
+    background-color: #EEDDCC;
+    width: 540px;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    border: solid 3px #000055;
+    font-size: 16px;
+    font-family: "Karla", "Verdana", "Ubuntu", sans-serif;
+    margin-top: -12em;
+    margin-left: 10%;
+}
+
+.FSLinhaInteira {
+    width: 510px;
+    text-align: left;
+}
+
+.FSEsq {
+    display: inline;
+    float: left;
+    border: none;
+}
+
+.FSDir {
+    display: inline;
+    float: right;
+    border: none;
+}
+
+.ColEsq {
+    width: 180px;
+    float: left;
+    display: block;  
+}
+
+.ColDir {
+    width: 130px;
+    float: right;
+    display: block;  
+}
+
+.LabBox {
+    width: 130px;
+    float: left;
+    display: block;
+}
+
+.botoes {
+    text-align: right;
+    margin: 20px 10px 0px 10px;
+}
+
+.InpBoxMed {
+    width: 70%;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.numDD{
+    width: 35px;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.ColEsqSelProd  {
+    width: 360px;
+    float: left;
+    display: block;
+    margin-bottom: 5%;
+}
+
+.ColEsqSelProd{
+    margin-bottom: 5%;
+}
+
+.ColDirSelProd {
+    margin-bottom: 6%;
+}
+
+.ColEsqValUnit {
+    width: 250px;
+    float: left;
+    display: block;
+}
+
+.itensColunaDir{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#idValUnitario {
+    width: 80px;
+    margin-top: 3%;
+}
+
+.boxPedidos {
+    width: 94%;
+    margin-left: 2%;
+    height: 8em;
+}
+
+.LinhaForm {
+    margin-top: 5%;
+    margin-left: 4%;
+}
+
+.LinhaForm input {
+    width: 80px;
+}
+
+.botoes {
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-top: 1%;
+    margin-bottom: -1%;
+    margin-left: -2%;
+    margin-right: 2%;
+}
+
+/* ======================== questao 6 =========================*/
+
+.InpBoxGnd {
+    width: 380px;
+}
+
+.numQD {
+    width: 50px;
+    border-radius: 4px;
+}
+
+.inpNCC {
+    width: 130px;
+}
+
+.inpTelef {
+    width: 90px;
+}
+
+.inpEnder {
+    width: 175px;
+    height: 180px;
+}
+
+.divLinha {
+    margin: 0px;
+    width: 500px;
+    padding: 6px 3px 0px 3px;
+}
+
+#idNome {
+    padding: 1%;
+    border-radius: 4px;
+    margin-left: 2.5em;
+    margin-bottom: 10px;
+}
+
+#idEmail {
+    padding: 1%;
+    border-radius: 4px;
+    margin-left: 2.15em;
+}
+
+.colPri {
+    width: 50%;
+    float: left;
+    display: block;
+}
+
+#endereco {
+    height: 60px;
+    width: 58%;
+    margin-left: 1em;
+}
+
+.divEndereco {
+    display: flex;
+    margin-top: 3%;
+}
+
+.divTel{
+    margin-top: 0.5em;
+}
+
+#idTel {
+    margin-left: 1em;
+    border-radius: 4px;
+}
+
+#idCel {
+    margin-left: 1.7em;
+    border-radius: 4px;
+}
+
+.numberNass{
+    width: 40px;
+    margin-top: 2%;
+    border-radius: 4px;
+}
+.colLabCrd {
+    width: 270px;
+    height: 70%;
+    text-align: left;
+    float: left;
+}
+
+.colValTot {
+    width: 220px;
+    text-align: left;
+    display: block;
+}
+
+.listaCompras {
+    width: 190px;
+    height: 200px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    float: left;
+}
+
+.botoesPag {
+    margin: 20px 10px 0px 10px;
+}
+
+.FieldPag {
+    display: flex;
+    flex-direction: row;
+    font-size: 14.8px;
+}
+
+.ColunaEsqPag {
+    width: 60%;
+}
+
+.divCartao {
+    margin-top: 1em;
+}
+
+.FieldIdentificação {
+    font-size: 14.8px;
+}
+
+#numCartao {
+    border-radius: 4px;
+    width: 47%;
+}
+
+#valTotal {
+    border-radius: 4px;
+    width: 85px;
+    margin-top: 1em;
+    font-size: 14.8px;
+}
+
+#enviar, #limpar {
+    border-radius: 4px;
+    padding: 1%;
+    float: right;
+    margin-left: 2%;
+}
+
+#FormPagamento {
+    margin-top: -15em;
+}
