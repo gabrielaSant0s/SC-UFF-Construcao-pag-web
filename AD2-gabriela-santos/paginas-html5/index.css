@@ -446,3 +446,16 @@ section {
 #FormPagamento {
     margin-top: -15em;
 }
+
+/* ----------------------- AD2 ----------------------------*/
+
+/* ===== questão 1 ===== */
+
+.divCafeteiras{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

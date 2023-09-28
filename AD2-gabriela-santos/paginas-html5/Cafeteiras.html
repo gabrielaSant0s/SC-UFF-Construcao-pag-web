@@ -28,24 +28,15 @@
     </nav>
     <section class="cafeteirasSec">
         <h1>Cafeteiras</h1>
-        <div class="listaMaq">
-            <ol>
-                <li>Dolce Gusto:</li>
-                    <ul class="cafList">
-                        <li>Mini ME (R$ <a class="preco"> 480,00</a>)</li>
-                        <li>Gênio S Plus (R$ <a class="preco"> 530,00</a>)</li>
-                    </ul>
-                <li>Nespresso:</li>
-                    <ul class="cafList">
-                        <li>Inissia (R$ <a class="preco"> 500,00</a>)</li>
-                    </ul>
-                <li>Três Corações:</li>
-                    <ul  class="cafList">
-                        <li>LOV (R$ <a class="preco"> 400,00</a>)</li>
-                    </ul>
+        <div class="listaMaq">      
+            <ol class="cafList">
+                <li><a id="miniMe" onclick="abrir_janela_miniMe()">Mini ME</a></li>
+                <li><a id="genioSPlus" onclick="abrir_janela_genioSPlus()">Gênio S Plus</a></li>
+                <li><a id="inissia" onclick="abrir_janela_inissia()">Inissia</a></li>
+                <li><a id="lov" onclick="abrir_janela_lov()">LOV</a></li>
             </ol>
         </div>
-        
-    </section>  
+        <script src="index.js"></script>
+    </section>
 </body>
 </html>
