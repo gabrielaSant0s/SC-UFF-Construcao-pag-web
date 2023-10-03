@@ -10,6 +10,10 @@ Repo criado com o intuito de guardar as atividades da matéria construção de p
 ![image](https://github.com/gabrielaSant0s/SC-UFF-Construcao-pag-web/assets/68717544/f4488bec-f72f-46ae-8f0e-58c8aafbc36c)
 ![image](https://github.com/gabrielaSant0s/SC-UFF-Construcao-pag-web/assets/68717544/6af25ff0-beac-4d67-82d6-b05101e6c009)
 
+### Imagens referentes a AD2
+
+![image](https://github.com/gabrielaSant0s/SC-UFF-Construcao-pag-web/assets/68717544/e44fd288-9cfb-4eae-b713-d6e149f9e62a)
+https://github.com/gabrielaSant0s/SC-UFF-Construcao-pag-web/assets/68717544/f6d1ad32-9aa2-48c5-9d46-50488001a377
 
 
 
