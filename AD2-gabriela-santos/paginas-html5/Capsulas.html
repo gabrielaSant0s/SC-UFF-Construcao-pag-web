@@ -28,48 +28,40 @@
     </nav>
     <section>
         <table class="tabCap">
-            <tr><th colspan="5" class="linTH">Cápsulas</th></tr>
+            <tr><th colspan="3" class="linTH">Cápsulas</th></tr>
             <tr>
                 <th class="linTH">Máquina</th>
                 <th class="linTH">Tipo</th>
-                <th class="linTH">QTD</th>
-                <th class="linTH">Preço</th>
-                <th class="linTH">Imagem</th>
+                <th class="linTH">Descrição</th>
             </tr>
             <tr>
                 <th rowspan="2" class="colTH">Dolce Gusto</th>
-                <td>Espresso</td>
-                <td>10</td>
-                <td><a class="preco">R$18,00</a></td>
-                <td class="imgCel"><img src="../Imagens/CapDolceGusto_10_Espresso.jpg"/></td>     
+                <td class="tipoCapTamanho"><a href="#celDes" onclick="alterar_tipo_capsulas('expresso')">Espresso</a></td>
+                <td rowspan="5" id="celDes">
+                    <div class="divDescricao">
+                        <h3 id="tipDes"></h3>
+                        <img src="../Imagens/vazio.jpg" id="imgDes"/>
+                        <h5 class="qtdDes"></h5>
+                        <h5 class="prcDes"></h5>
+                    </div>     
+                </td> 
             </tr>
             <tr>
-                <td>Intenso</td>
-                <td>10</td>
-                <td><a class="preco">R$19,00</a></td>
-                <td class="imgCel"><img src="../Imagens/CapDolceGusto_10_Intenso.jpg"/></td>     
+                <td class="tipoCapTamanho"><a href="#celDes" onclick="alterar_tipo_capsulas('intenso')">Intenso</a></td>    
             </tr>
             <tr>
                 <th class="colTH">Três Corações</th>
-                <td>Forza / Vibrante</td>
-                <td>30</td>
-                <td><a class="preco">R$44,00</a></td>
-                <td class="imgCel"><img src="../Imagens/CapTresCoracoes_30_ForzaVibrante.jpg"/></td>     
+                <td class="tipoCapTamanho"><a href="#celDes" onclick="alterar_tipo_capsulas('forza-vibrante')">Forza / Vibrante</a></td>     
             </tr>
             <tr>
                 <th rowspan="2" class="colTH">Nespresso</th>
-                <td>Três Cor. Intenso</td>
-                <td>10</td>
-                <td><a class="preco">R$20,00</a></td>
-                <td class="imgCel"><img src="../Imagens/CapTresCoracoesNespreso_10_Intenso.jpg"/></td>     
+                <td class="tipoCapTamanho"><a href="#celDes" onclick="alterar_tipo_capsulas('tres-coracoes')">Três Cor. Intenso</a></td>
             </tr>
             <tr>
-                <td>Lor Forza</td>
-                <td>10</td>
-                <td><a class="preco">R$21,00</a></td>
-                <td class="imgCel"><img src="../Imagens/CapLorNespreso_10_Forza.jpg"/></td>     
+                <td class="tipoCapTamanho"><a href="#celDes" onclick="alterar_tipo_capsulas('lor-forza')">Lor Forza</a></td>
             </tr>
         </table>
-    </section>  
+    </section>
+    <script src="index.js"></script>
 </body>
 </html>

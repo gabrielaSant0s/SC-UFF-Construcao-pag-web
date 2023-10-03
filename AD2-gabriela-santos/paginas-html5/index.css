@@ -459,3 +459,32 @@ section {
     flex-direction: column;
     align-items: center;
 }
+
+/* ===== questão 2 ===== */
+
+#celDes {
+    width: 200px;
+}
+
+.tipoCapTamanho {
+    height: 52px;
+}
+
+.divDescricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imgDes{
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.qtdDes{
+    margin-bottom: -5px;
+}
+
+.prcDes a {
+    color: red;
+}
