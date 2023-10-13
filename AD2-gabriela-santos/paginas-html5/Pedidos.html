@@ -40,31 +40,33 @@
 
                             <div class="ColEsqSelProd">
                                 <label for="selMaquina">Máquinas:</label>
-                                <select id="selMaquina" name="selMaquina" form="formPedido" class="InpBoxMed">
+                                <select id="selMaquina" name="selMaquina" form="formPedido" class="InpBoxMed"
+                                    onclick="add_um_qtd_maq(0)">
                                     <option>-----</option>
                                     <optgroup label="Dolce Gusto">
-                                        <option value="480">Mine ME</option>
-                                        <option value="530">Genio S Plus</option>
+                                        <option value="480" name="Mine ME">Mine ME</option>
+                                        <option value="530" name="Genio S Plus">Genio S Plus</option>
                                     <optgroup label="Nespresso">
-                                        <option value="500">Inissia</option>
+                                        <option value="500" name="Inissia">Inissia</option>
                                     <optgroup label="Três Corações">
-                                        <option value="400">LOV</option>
+                                        <option value="400" name="LOV">LOV</option>
                                 </select>
                             </div>
 
 
                             <div class="ColEsqSelProd">
                                 <label for="selCapsula">Cápsulas:</label>
-                                <select id="selCapsula" name="selCapsula" form="formPedido" class="InpBoxMed">
+                                <select id="selCapsula" name="selCapsula" form="formPedido" class="InpBoxMed"
+                                    onclick="add_um_qtd_cap(0)">
                                     <option>-----</option>
                                     <optgroup label="Tipo Dolce Gusto">
-                                        <option value="18">Dolce Gusto Expresso</option>
-                                        <option value="19">Dolce Gusto Intenso</option>
+                                        <option value="18" name="Dolce Gusto Expresso">Dolce Gusto Expresso</option>
+                                        <option value="19" name="Dolce Gusto Intenso">Dolce Gusto Intenso</option>
                                     <optgroup label="Tipo Três Corações">
-                                        <option value="44">Força / Vibrante</option>
+                                        <option value="44" name="Força / Vibrante">Força / Vibrante</option>
                                     <optgroup label="Tipo Nespresso">
-                                        <option value="20">Três Corações Intenso</option>
-                                        <option value="21">Lor Forza</option>
+                                        <option value="20" name="Três Corações Intenso">Três Corações Intenso</option>
+                                        <option value="21" name="Lor Forza">Lor Forza</option>
                                 </select>
                             </div>
 
@@ -82,14 +84,17 @@
                             <div class="itensColunaDir">
                                 <span class="ColDirSelProd">
                                     <label for="idQtdMaquina">Qtd:</label>
-                                    <input type="number" id="idQtdMaquina" class="numDD" min="1" max="5" />
-                                    <button type="button" onclick="adicionar_qtd_maq()">+</button>
+                                    <input type="number" id="idQtdMaquina" class="numDD" min="1" max="5"
+                                        onclick="adicionar_qtd_maq()" />
+                                    <button type="button" onclick="adicionar_a_lista_compras_maquinas()"
+                                        class="buttonMaq">+</button>
                                 </span>
 
                                 <span class="ColDirSelProd">
                                     <label for="idQtdCapsula">Qtd:</label>
-                                    <input type="number" id="idQtdCapsula" class="numDD" min="1" max="30" />
-                                    <button type="button" onclick="adicionar_qtd_cap()">+</button>
+                                    <input type="number" id="idQtdCapsula" class="numDD" min="1" max="30"
+                                        onclick="adicionar_qtd_cap()" />
+                                    <button type="button" onclick="adicionar_a_lista_compras_capsulas()">+</button>
                                 </span>
                             </div>
                         </div>
@@ -108,7 +113,7 @@
 
                 <div class="botoes">
                     <input type="submit" value="Comprar" class="botoes" />
-                    <input type="reset" value="Limpar" class="botoes" />
+                    <input type="reset" value="Limpar" class="botoes" onclick="limpar_valor_total()" />
                 </div>
             </form>
         </div>
