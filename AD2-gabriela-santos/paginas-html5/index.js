@@ -57,3 +57,19 @@ function alterar_descricao_capsulas(array_capsulas){
 
     console.log(href_imagem);
 }
+
+// ----------- Questão 3 ----------
+
+var add_qtd_maq = 0 
+function adicionar_qtd_maq(){
+    if (add_qtd_maq < 5) {
+        document.getElementById('idQtdMaquina').value = ++add_qtd_maq;
+    }
+}
+
+var add_qtd_cap = 0 
+function adicionar_qtd_cap(){
+    if (add_qtd_cap < 30) {
+        document.getElementById('idQtdCapsula').value = ++add_qtd_cap;
+    }
+}

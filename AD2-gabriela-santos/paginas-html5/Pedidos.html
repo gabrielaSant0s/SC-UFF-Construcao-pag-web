@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla|Verdana|Ubuntu">
     <title>A Espuma era Lei - Pedidos</title>
 </head>
+
 <body>
     <header>
         <div class="imgLogo">
@@ -43,14 +45,14 @@
                                     <optgroup label="Dolce Gusto">
                                         <option value="480">Mine ME</option>
                                         <option value="530">Genio S Plus</option>
-                                    <optgroup label="Nespresso"> 
+                                    <optgroup label="Nespresso">
                                         <option value="500">Inissia</option>
                                     <optgroup label="Três Corações">
                                         <option value="400">LOV</option>
                                 </select>
                             </div>
 
-                            
+
                             <div class="ColEsqSelProd">
                                 <label for="selCapsula">Cápsulas:</label>
                                 <select id="selCapsula" name="selCapsula" form="formPedido" class="InpBoxMed">
@@ -65,12 +67,12 @@
                                         <option value="21">Lor Forza</option>
                                 </select>
                             </div>
-                            
+
                             <div class="ColEsqValUnit">
-                                <label for="idValUnitario">Valor Unitário R$:</label>
-                                <input type="number" id="idValUnitario" class="numDD"/>
+                                <label for="idValUnitario">Valor X QTD: R$</label>
+                                <input type="number" id="idValUnitario" class="numDD" />
                             </div>
-                            
+
                         </div>
                     </fieldset>
 
@@ -78,23 +80,18 @@
 
                         <div class="ColDir">
                             <div class="itensColunaDir">
-                                <div class="ColDirSelProd">
+                                <span class="ColDirSelProd">
                                     <label for="idQtdMaquina">Qtd:</label>
-                                    <input type="number" id="idQtdMaquina" class="numDD"/>
-                                </div>
-                                
-                                <div class="ColDirSelProd">
-                                    <label for="idQtdCapsula">Qtd:</label>
-                                    <input type="number" id="idQtdCapsula" class="numDD"/>
-                                </div>
-                               
-                                <div class="ColDirSelProd">
-                                    <input type="button" value="Incluir Produtos" class="botoes"/>
+                                    <input type="number" id="idQtdMaquina" class="numDD" min="1" max="5" />
+                                    <button type="button" onclick="adicionar_qtd_maq()">+</button>
+                                </span>
 
-                                </div>
+                                <span class="ColDirSelProd">
+                                    <label for="idQtdCapsula">Qtd:</label>
+                                    <input type="number" id="idQtdCapsula" class="numDD" min="1" max="30" />
+                                    <button type="button" onclick="adicionar_qtd_cap()">+</button>
+                                </span>
                             </div>
-                            
-                            
                         </div>
                     </fieldset>
 
@@ -104,17 +101,19 @@
 
                     <div class="LinhaForm">
                         <label for="idValTotal">Valor Total R$:</label>
-                        <input type="number" id="idValTotal" class="numDD"/>
+                        <input type="number" id="idValTotal" class="numDD" />
                     </div>
-                    
-                </fieldset>  
+
+                </fieldset>
 
                 <div class="botoes">
-                        <input type="submit" value="Continuar" class="botoes"/>
-                        <input type="reset" value="Limpar" class="botoes"/>
+                    <input type="submit" value="Comprar" class="botoes" />
+                    <input type="reset" value="Limpar" class="botoes" />
                 </div>
             </form>
         </div>
-    </section>  
+    </section>
+    <script src="index.js"></script>
 </body>
+
 </html>

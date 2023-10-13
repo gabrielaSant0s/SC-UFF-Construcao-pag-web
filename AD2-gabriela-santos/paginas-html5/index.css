@@ -488,3 +488,9 @@ section {
 .prcDes a {
     color: red;
 }
+
+/* ===== questão 3 ===== */
+
+#selCapsula{
+    margin-left: 4px;
+}
